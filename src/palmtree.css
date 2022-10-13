@@ -2,14 +2,14 @@
 
 body {
 	width: 100vw;
-	min-height: 60vh;
 	padding: 16rem 0 0;
 	margin: 0;
 	background: #302623
 		linear-gradient(90deg, #0005 0%, transparent 5%, transparent 95%, #0005 100%);
 	color: #ddd;
 	font-family: Lato, Arial, Helvetica, sans-serif;
-	line-height: 1.25rem;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
 	overflow-x: hidden; }
 
 /* overwrite defaults */
@@ -25,8 +25,8 @@ video, img, audio {
 	margin: 0 auto; }
 
 hr {
-	width: 1.5rem;
-	height: 1.5rem;
+	width: 2em;
+	height: 2em;
 	margin: 2rem auto;
 	background: center / contain url("img/logo.png");
 	filter: invert(100%);
@@ -58,7 +58,7 @@ a:hover::after, a.focus::after { width: 100%; }
 nav {
 	width: 100vw;
 	height: 2.5em;
-	background: rgba(0, 0, 0, 0.25);
+	background: rgba(0, 0, 0, 0.33);
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -87,7 +87,6 @@ header {
 
 body > .wrapper {
 	max-width: 80ch;
-	min-height: 60vh;
 	margin: 0 auto;
 	padding: 2rem;
 	text-align: center; }
@@ -97,7 +96,7 @@ footer {
 	height: 8rem;
 	background: #190f0e;
 	color: #bbb;
-	font-size: .85rem;
+	font-size: 1rem;
 	border-top-left-radius: 2rem;
 	border-top-right-radius: 2rem;
 	display: flex;
@@ -126,21 +125,21 @@ a.index::after {
 /* responsive */
 
 @media (orientation: portrait) {
-	html {
-		font-size: .9rem; }
+	body {
+		font-size: 1rem; }
 
 	video, img, audio {
 		width: 100%; }
 
 	nav {
-		font-size: 1.1rem; }
+		font-size: 1.5rem; }
 
 	body > .wrapper {
 		padding: 1rem;
 		max-width: unset; }
 
 	footer {
-		font-size: .8rem;
+		font-size: .9rem;
 		gap: .1rem;
 		flex-direction: column; }
 
