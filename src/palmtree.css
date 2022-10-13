@@ -24,6 +24,15 @@ video, img, audio {
 	width: 80%;
 	margin: 0 auto; }
 
+hr {
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 2rem auto;
+	background: center / contain url("img/logo.png");
+	filter: invert(100%);
+	opacity: .5;
+	border: none; }
+
 a {
 	text-decoration: none;
 	color: #fe7449;
@@ -80,7 +89,7 @@ body > .wrapper {
 	max-width: 80ch;
 	min-height: 60vh;
 	margin: 0 auto;
-	padding: 1rem 2rem;
+	padding: 2rem;
 	text-align: center; }
 
 footer {
@@ -127,6 +136,7 @@ a.index::after {
 		font-size: 1.1rem; }
 
 	body > .wrapper {
+		padding: 1rem;
 		max-width: unset; }
 
 	footer {
