@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap");
 
 body {
 	width: 100vw;
 	padding: 16rem 0 0;
 	margin: 0;
-	background: #302623
-		linear-gradient(90deg, #0005 0%, transparent 5%, transparent 95%, #0005 100%);
+	background: #302623;
 	color: #ddd;
 	font-family: Lato, Arial, Helvetica, sans-serif;
 	font-size: 1.25rem;
@@ -20,7 +19,7 @@ h1, h2, h3 {
 h1, h2, h3, p {
 	margin: 1rem 0; }
 
-video, img, audio {
+video, img, audio, .iframe-wrapper {
 	width: 80%;
 	margin: 0 auto; }
 
@@ -46,12 +45,14 @@ a::after {
 	display: block;
 	height: 1px;
 	width: 0;
-	transition: width .15s;
-	background: currentColor; }
+	transition: width .15s, background .15s;
+	background: #fe7449; }
 
 a:hover, a.focus { color: #fff; }
 
-a:hover::after, a.focus::after { width: 100%; }
+a:hover::after, a.focus::after {
+	background: #fff;
+	width: 100%; }
 
 /* theming */
 
@@ -91,6 +92,14 @@ body > .wrapper {
 	padding: 2rem;
 	text-align: center; }
 
+body > .wrapper > h1:first-child {
+	margin-bottom: -2rem;
+	font-family: "Lobster", cursive;
+	font-size: 7.5rem;
+	position: relative;
+	bottom: 5rem;
+	text-shadow: 0 0 .5rem rgba(0, 0, 0, 0.33); }
+
 footer {
 	width: 100vw;
 	height: 8rem;
@@ -122,6 +131,22 @@ a.index::after {
 
 .secondary { opacity: .6; }
 
+.iframe-wrapper {
+	padding-top: 45%;
+	position: relative;
+	overflow: hidden;
+}
+
+.iframe-wrapper iframe {
+	height: 100%;
+	width: 100%;
+	border-radius: 2rem;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 /* responsive */
 
 @media (orientation: portrait) {
@@ -137,6 +162,11 @@ a.index::after {
 	body > .wrapper {
 		padding: 1rem;
 		max-width: unset; }
+
+
+	body > .wrapper > h1:first-child {
+		font-size: 5rem;
+		bottom: 3.5rem; }
 
 	footer {
 		font-size: .9rem;
