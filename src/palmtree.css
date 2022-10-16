@@ -59,7 +59,7 @@ a:hover::after, a.focus::after {
 nav {
 	width: 100vw;
 	height: 2.5em;
-	background: rgba(0, 0, 0, 0.33);
+	background: transparent;
 	position: fixed;
 	left: 0;
 	top: 0;
