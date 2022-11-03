@@ -94,11 +94,13 @@ body > .wrapper {
 	text-align: center; }
 
 body > .wrapper > h1:first-child {
-	margin-bottom: -2rem;
+	margin-top: -1rem;
+	margin-bottom: -3rem;
 	font-family: "Lobster", cursive;
 	font-size: 7.5rem;
 	position: relative;
 	bottom: 5rem;
+	line-height: .9em;
 	text-shadow: 0 0 .5rem rgba(0, 0, 0, 0.33); }
 
 footer {
@@ -118,9 +120,9 @@ footer > .divider::after {
 	content: "/";
 	color: rgba(0, 0, 0, 0.5); }
 
-ul { padding: 0; }
-ul.left { padding: 0 2.5rem; }
-li::marker { content: "\2023  "; }
+ul { padding: 0; list-style: none; }
+ul.left { padding: 0 2rem; }
+li::before { content: "\2023  "; }
 
 /* misc */
 
