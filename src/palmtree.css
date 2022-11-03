@@ -118,6 +118,10 @@ footer > .divider::after {
 	content: "/";
 	color: rgba(0, 0, 0, 0.5); }
 
+ul { padding: 0; }
+ul.left { padding: 0 2.5rem; }
+li::marker { content: "\2023  "; }
+
 /* misc */
 
 a.index {
