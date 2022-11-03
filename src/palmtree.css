@@ -118,7 +118,7 @@ footer {
 
 footer > .divider::after {
 	content: "/";
-	color: rgba(0, 0, 0, 0.5); }
+	color: rgba(255, 255, 255, 0.33); }
 
 ul { padding: 0; list-style: none; }
 ul.left { padding: 0 2rem; }
